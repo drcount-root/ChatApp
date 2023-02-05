@@ -10,6 +10,7 @@
   "author": "Subham Sahu",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^8.2.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.12.0"
   },
