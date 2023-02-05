@@ -1,5 +1,16 @@
 import { Outlet } from "react-router-dom";
 
+import FullScreenCard from "../../components/FullScreenCard";
+
 export function AuthLayout() {
-    return <Outlet />
+  return (
+    <FullScreenCard>
+      <FullScreenCard.Body>
+        <Outlet />
+      </FullScreenCard.Body>
+      <FullScreenCard.BelowCard>
+        create account
+      </FullScreenCard.BelowCard>
+    </FullScreenCard>
+  );
 }
