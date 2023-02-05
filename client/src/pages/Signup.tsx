@@ -28,17 +28,28 @@ export function Signup() {
         <label htmlFor="userName" className="font-semibold">
           Username
         </label>
-        <Input id="userName" pattern="\S*" required ref={usernameRef} />
+        <Input
+          id="userName"
+          pattern="\S*"
+          required
+          ref={usernameRef}
+          className="bg-slate-200"
+        />
 
         <label htmlFor="name" className="font-semibold">
           Name
         </label>
-        <Input id="name" required ref={nameRef} />
+        <Input id="name" required ref={nameRef} className="bg-slate-200" />
 
         <label htmlFor="imageUrl" className="font-semibold">
           Image Url
         </label>
-        <Input id="imageUrl" type="url" ref={imageUrlRef} />
+        <Input
+          id="imageUrl"
+          type="url"
+          ref={imageUrlRef}
+          className="bg-slate-200"
+        />
         <Button type="submit" className="col-span-full">
           Sign Up
         </Button>

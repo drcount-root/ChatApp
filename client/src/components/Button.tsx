@@ -6,7 +6,7 @@ export const Button = forwardRef<
 >(({ className, children, ...rest }, ref) => {
   return (
     <button
-      className={`bg-pink-700 text-white bg-opacity-100 rounded p-2 w-full font-bold hover:bg-blue-400 focus:bg-blue-400 animate-pulse disabled:bg-gray-500 transition-colors delay-75 ${className}`}
+      className={`bg-slate-200 text-slate-900 rounded p-2 w-full font-bold hover:bg-blue-200 delay-100 focus:bg-blue-200 disabled:bg-gray-500 ${className}`}
       {...rest}
       ref={ref}
     >
