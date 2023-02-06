@@ -8,6 +8,8 @@ import Select, { SelectInstance } from "react-select"
 import { useLoggedInAuth } from "../../context/AuthContext"
 import { useNavigate } from "react-router-dom"
 
+import propeller from "../../propeller.png";
+
 export function NewChannel() {
   const { streamChat, user } = useLoggedInAuth()
   const navigate = useNavigate()
@@ -72,17 +74,27 @@ export function NewChannel() {
   return (
     <FullScreenCard>
       <FullScreenCard.Body>
-        <h1 className="text-3xl font-bold mb-8 text-center">
-          New Conversation
-        </h1>
+      <div className="flex justify-between">
+        <img
+          src={propeller}
+          style={{ width: "40px", height: "40px" }}
+          className="animate-spin"
+        />
+        <h1 className="text-3xl font-bold mb-8 text-center">New Conversation</h1>
+        <img
+          src={propeller}
+          style={{ width: "40px", height: "40px" }}
+          className="animate-spin"
+        />
+      </div>
         <form
           onSubmit={handleSubmit}
           className="grid grid-cols-[auto,1fr] gap-x-3 gap-y-5 items-center justify-items-end"
         >
           <label htmlFor="name">Name</label>
-          <Input id="name" required ref={nameRef} />
+          <Input id="name" required ref={nameRef} className="focus:bg-blue-100 bg-slate-100"/>
           <label htmlFor="imageUrl">Image Url</label>
-          <Input id="imageUrl" ref={imageUrlRef} />
+          <Input id="imageUrl" ref={imageUrlRef} className="focus:bg-blue-100 bg-slate-100"/>
           <label htmlFor="members">Members</label>
           <Select
             ref={memberIdsRef}
