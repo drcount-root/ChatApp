@@ -4,7 +4,7 @@ type FullScreenCardProps = {
   children: ReactNode;
 };
 
-export default function FullScreenCard({ children }: FullScreenCardProps) {
+export function FullScreenCard({ children }: FullScreenCardProps) {
   return (
     <div className=" bg-orange-200 flex justify-center items-center min-h-screen">
       <div className="max-w-md w-full">{children}</div>

@@ -75,7 +75,7 @@ export function Signup() {
           type="submit"
           className="col-span-full"
         >
-          {signup.isLoading ? "Loading.." : "Sign Up"}
+          {signup.isLoading ? "Loading..." : "Sign Up"}
         </Button>
       </form>
     </React.Fragment>
